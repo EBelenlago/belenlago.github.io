@@ -1,0 +1,55 @@
+:root {
+  --bg: #0b1020; --card: #121935; --text: #e8ecf3; --muted: #9fb0d0; --link: #7fb5ff;
+  --radius: 16px;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 24px; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: radial-gradient(1200px 800px at 10% 10%, #0e1630, #0b1020);
+  color: var(--text);
+}
+header { text-align: center; margin: 24px 0 16px; }
+header h1 { margin: 0 0 8px; font-size: 2rem; }
+header p { margin: 0; color: var(--muted); }
+
+section { background: var(--card); padding: 20px; margin: 18px auto; border-radius: var(--radius); max-width: 980px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+#projects .project { background: rgba(255,255,255,.03); padding: 16px; border-radius: 12px; margin: 12px 0; }
+#projects .project h3 { margin: 0 0 6px; }
+#projects .project a { color: var(--link); text-decoration: none; font-weight: 600; }
+#projects .project a:hover { text-decoration: underline; }
+
+#skills {
+  background: var(--card);           /* mismo fondo que Projects */
+  padding: 20px;
+  margin: 18px auto;                 /* centra la sección */
+  border-radius: var(--radius);      /* misma curvatura que Projects */
+  max-width: 980px;                  /* ancho máximo igual que Projects */
+  box-shadow: 0 10px 30px rgba(0,0,0,.25); /* misma sombra */
+}
+
+#skills h2 {
+  text-align: center;                /* centra el título */
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;                    /* centra la lista */
+  max-width: 600px;                  /* ancho máximo de la lista de skills */
+}
+
+.skills-list li {
+  background: rgba(255,255,255,.03); /* mismo estilo de los proyectos */
+  padding: 16px;
+  border-radius: 12px;
+  margin: 12px 0;                     /* espacio vertical entre skills */
+  text-align: center;                 /* centra el texto dentro de la caja */
+  color: var(--text);                 /* usa el color de texto definido */
+}
+
+
+#contact a { color: var(--link); }
+
+footer { text-align: center; color: var(--muted); margin: 12px 0; font-size: .9rem; }
